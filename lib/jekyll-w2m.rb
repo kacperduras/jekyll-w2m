@@ -5,7 +5,6 @@ require "liquid"
 require "word-to-markdown"
 
 module Jekyll
-
   module W2M
 
     class Tag < Liquid::Tag
@@ -25,7 +24,6 @@ module Jekyll
     end
 
   end
-
 end
 
 Liquid::Template.register_tag("w2m", Jekyll::W2M::Tag)

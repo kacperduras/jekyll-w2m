@@ -6,7 +6,7 @@ require "jekyll-w2m/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-w2m"
-  spec.version       = Jekyll::W2m::VERSION
+  spec.version       = Jekyll::W2M::VERSION
   spec.authors       = ["Kacper Duras"]
   spec.email         = ["git@kacperduras.pl"]
 
