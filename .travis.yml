@@ -7,6 +7,7 @@ before_script: bundle update
 script: script/cibuild
 
 matrix:
+  fast_finish: true
   include:
     - rvm: 2.6.0-preview1
     - rvm: 2.5.0
@@ -14,6 +15,8 @@ matrix:
     - rvm: 2.3.6
     - rvm: 2.2.9
     # JRuby
+    - rvm: jruby-9.1.16.0
+  allow_failrues:
     - rvm: jruby-9.1.16.0
 
 notfications:
