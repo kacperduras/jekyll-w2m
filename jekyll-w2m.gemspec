@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.required_ruby_version = ">= 2.2"
+  spec.required_ruby_version = ">= 2.3"
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r!^(test|spec|features)/!)
