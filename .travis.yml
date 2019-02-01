@@ -16,5 +16,16 @@ matrix:
     # JRuby
     # - rvm: jruby-9.1.16.0 - https://github.com/kacperduras/jekyll-w2m/issues/2
 
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: "s4GHX+11qthI3BUL6MBCbD9gICQBHr1NIDS/828nCeKbe5yJ43iRvOZPITqOLEeWIQC7UBEdhpPsG1atHIsjf8v+Q1AEZwLiq1GwoF4TqYwJaxRQn0oq6eBgxBnzGLREZFt9p/xWRGOOH5L/cwREFX18/BDBWf+t5mxB89FJ1p1egPSiH/S0AazY8cEecBI93bH6XxWA5JCcjd7OwlVPPsea9pH8wyCfnITQkALDqZgs6xAfuvvs+/RpontbzanJFiSmXsZ0pwvfjuwm/fDJu82RznHJ6lTi/K4y69OCxEvBLpwMPiVs+Z5ulvNcyAvXt5caVWzO+nXOtZN7EZ4c/smoj7rnSxOEMe3K81pZCiHuOHKs1Phas3ltHlxs2gXgWYjL8Z58RiuBuO1YXJJAztuDP/gfwJ+Qq9BcxVoE/yirKiNkDfnXaMLrWONwi431VfgKL5h8zGUEqpGMFoE833Q9PEaj96GEv7yGFyvh6Vg1DzRzoklIhfp5jhXdyxnuReMKFkkoYEa3Iui4RyquEkdjSV1OtjnBSuWewYRbZQbiN+5oEL8yjR+RNIfWO2yXBwilnf/xCOfbPQSW7B/cjtlyJOqzSkKmc5Qv0H2ASWh3iQhYwCxGnq9sTtXpbLWSaDgdhPjV5ckDiUYJ9KN1n3R08mtaNemITZqvgdKjI80="
+  on:
+    rvm: 2.5.3
+    tags: true
+  gem: jekyll-w2m
+  gemspec: jekyll-w2m.gemspec
+
 notfications:
   email: false
